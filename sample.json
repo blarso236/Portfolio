@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Bearizona Wildlife Park",
+        "address": "1500 E Rte 66, Williams, AZ 86046",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.006628422403!2d-112.15594528453038!3d35.25609088029566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87329e9a95cd8c8d%3A0xd443c3f369265c48!2s1500%20E%20Rte%2066%2C%20Williams%2C%20AZ%2086046!5e0!3m2!1sen!2sus!4v1647894965217!5m2!1sen!2sus"
+    },
+
+    {
+        "name": "Yuma Territorial Prison Park",
+        "address": "220 Prison Hill Rd, Yuma, AZ 85364",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.457440635603!2d-114.6171407845901!3d32.727042080987154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d6f5d4f5032a77%3A0xbf885b3df84516cc!2s220%20Prison%20Hill%20Rd%2C%20Yuma%2C%20AZ%2085364!5e0!3m2!1sen!2sus!4v1647983792950!5m2!1sen!2sus"
+    },
+
+    {
+        "name": "Meteor Crater Natural Landmark",
+        "address": "Interstate 40, Exit, 233, Winslow, AZ 86047",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52274.54246829637!2d-111.05721232089843!3d35.0277544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872e745d7f38512f%3A0xe0c334a29e78fd9e!2sMeteor%20Crater%20Natural%20Landmark!5e0!3m2!1sen!2sus!4v1647895547240!5m2!1sen!2sus"
+    },
+
+    {
+        "name": "Arizona Commemorative Air Force Museum",
+        "address": "2017 N Greenfield Rd, Mesa, AZ 85215",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.873785467975!2d-111.73710488457345!3d33.452594680773274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba5b82d88cf9f%3A0x5bd7a784bb83740f!2s2017%20N%20Greenfield%20Rd%2C%20Mesa%2C%20AZ%2085215!5e0!3m2!1sen!2sus!4v1647895798330!5m2!1sen!2sus"
+    },
+    
+    {
+        "name": "The Great Pyramid of Giza",
+        "address": "Al Haram, Giza Governorate, Egypt",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13109.910002833078!2d31.144430792938905!3d29.98338522513563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584514019cd63f%3A0xcd9b620a6cdaf277!2sGiza%20Pyramids!5e0!3m2!1sen!2sus!4v1647896145644!5m2!1sen!2sus"
+    },
+
+    {
+        "name": "Grand Canyon National Park",
+        "address": "Arizona",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302299.31620655!2d-115.08639493030856!3d36.07150224451593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2sGrand%20Canyon%20National%20Park!5e0!3m2!1sen!2sus!4v1647896421761!5m2!1sen!2sus"
+    }
+]

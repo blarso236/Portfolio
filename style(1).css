@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 50px;
+    background: blue;
+    transition: width 2s;
+}
+
+#div1 {transition-timing-function: ease;}
+
+div:hover {
+    width: 300px;
+}

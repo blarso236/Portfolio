@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+<body>
+    
+    <h1 class="header">Places to Visit</h1>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news" onclick="sectionB()">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Settings
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content"
+        id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        </div>
+    </ul><br>
+
+    <div class="Places">
+    <img src="bearizona-wildlife-park.jpg" class="place" id="A" onclick="redirectA()">
+    <img src="yuma.jpg" class="place" id="B" onclick="redirectB()">
+    <img src="meteor-crater.jpg" class="place" id="C" onclick="redirectC()">
+    <img src="plane.jpg" class="place" id="D" onclick="redirectD()">
+    <img src="pyramid.jpg" class="place" id="E" onclick="redirectE()">
+    <img src="Grand-Canyon.jpg" class="place" id="F" onclick="redirectF()">
+    </div><br>
+    <div>
+    <button id="maps" onclick="locations()">Click here for maps of each location.</button>
+    </div>
+    <script src="homepage.js"></script>
+    <script src="places.js"></script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn'))
+            {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

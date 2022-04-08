@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+            var plan1 = {
+                name: "Basic",
+                price: 3.99,
+                space: 100,
+                transfer: 1000,
+                pages: 10,
+                discountMonths: [0, 7]
+            };
+ 
+ 
+ 
+                var plan2 = {
+                name: "Professional",
+                price: 5.99,
+                space: 500,
+                transfer: 5000,
+                pages: 50,
+                discountMonths: [0, 7, 11]
+            };
+ 
+            var plan3 = {
+                name: "Ultimate",
+                price: 9.99,
+                space: 2000,
+                transfer: 20000,
+                pages: 500,
+                discountMonths: [0, 7]
+            };
+            function calcAnnual(percentIfDisc) {
+                    var bestPrice = plan1.price;
+                    console.log("Price" + bestPrice);
+                    var currDate = new Date();
+                    console.log("Current Date " +currDate);
+                    var thisMo = currDate.getMonth();
+                    console.log("This Month " +thisMo);
+                    for (var i = 0; i < plan1.discountMonths.length; i++) {
+ 
+                    if (plan1.discountMonths[i] === thisMo) {
+                    bestPrice = plan1.price * percentIfDisc;
+                    break;}
+                    console.log("Best Price" +bestPrice);
+                    }
+                    return bestPrice * 12;
+                    }
+ 
+ 
+ 
+                    //var annualPrice = calcAnnual(.85);//
+                    //alert("Annual Price" +annualPrice);//
+ 
+            function calcAnnual() {
+                    var bestPrice = plan1.price;
+                    console.log("Price" + bestPrice);
+                    var currDate = new Date();
+                    console.log("Current Date " +currDate);
+                    var thisMo = currDate.getMonth();
+                    console.log("This Month " +thisMo);
+                    for (var i = 0; i < plan1.discountMonths.length; i++) {
+ 
+                    if (plan1.discountMonths[i] === thisMo) {
+                    bestPrice = plan1.price * .8;
+                    break;}
+                    console.log("Best Price" +bestPrice);
+                    }
+                    return bestPrice * 12;
+                    }
+ 
+ 
+             var annualPrice = calcAnnual();
+                    alert("Annual Price" +annualPrice);
+        </script>
+ 
+</body>
+</html>

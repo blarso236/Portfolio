@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG example</title>
+    <style>
+    body {
+        background-image: linear-gradient(to right ,black, lightgray);
+    }
+    
+    svg {
+position: relative;
+left: 43%;
+-webkit-transform: translateX(40%);
+-ms-transform: translateX(40%);
+transform: translateX(40%);
+-webkit-transform: translateY(120%);
+    }
+
+    .B {
+        position: absolute;
+        left: 30%;
+        top: -50%;
+    }
+
+    .C {
+        position: absolute;
+        top: -3%;
+        left: 52.5%;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <svg class="A" width="200" height="200">
+        <circle cx="100" cy="100" r="80" stroke="#e6896b"
+        stroke-width="8" fill="Gray"/>
+    </svg>
+
+    <svg class="B" width="700" height="450">
+        <rect width="600" height="20" style="fill:gray;stroke-width:5;stroke: #e6896b" transform="translate(25,-100)  rotate(-45)" x="-325" y="425"/>
+    </svg>
+
+    <svg class="C" width="160" height="160">
+        <circle cx="70" cy="70" r="50" stroke="#e6896b"
+        stroke-width="8" fill="Gray"/>
+    </svg>
+
+</body>
+</html>

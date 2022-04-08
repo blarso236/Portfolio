@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user plans</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        .Basic {
+            position: absolute;
+            left: 100px;
+            display: inline-block;
+            margin: 10px black;
+            border: 15px gray;
+            background-color: green;
+            color: black;
+            padding: 50px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .Basic-content {
+            text-align: center;
+            display: none;
+            position: absolute;
+            left: 0px;
+            font-size: 18px;
+            background-color: darkgreen;
+            width: 211px;
+            box-shadow: green;
+            padding: 12px 16px gray;
+            z-index: 1;
+        }
+
+        .Professional {
+            position: absolute;
+            left: 35rem;
+            display: inline-block;
+            margin: auto black;
+            border: 15px gray;
+            background-color: blue;
+            color: black;
+            padding: 50px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .Professional-content {
+            text-align: center;
+            display: none;
+            position: absolute;
+            font-size: 28px;
+            left: 0;
+            background-color: turquoise;
+            width: 21.74rem;
+            box-shadow: green;
+            padding: 12px 16px gray;
+            z-index: 1;
+        }
+
+        .Professional:hover .Professional-content {
+            display: block;
+        }
+
+        .Ultimate {
+            position: absolute;
+            left: 70rem;
+            display: inline-block;
+            margin: 10px black;
+            border: 15px gray;
+            background-color: red;
+            color: black;
+            padding: 50px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .Ultimate-content {
+            text-align: center;
+            display: none;
+            position: absolute;
+            left: 0px;
+            font-size: 22px;
+            background-color: darkred;
+            width: 17.24rem;
+            box-shadow: green;
+            padding: 12px 16px gray;
+            z-index: 1;
+        }
+
+        .Ultimate:hover .Ultimate-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var plan1 = {
+            name: "Basic",
+            price: 3.99,
+            space: 100,
+            transfer: 1000,
+            pages: 10,
+            discountMonths: [6, 7]
+        };
+        var plan2 = {
+            name: "Professional",
+            price: 5.99,
+            space: 500,
+            transfer: 5000,
+            pages: 50,
+            discountMonths: [6, 7, 11]
+        };
+        var plan3 = {
+            name: "Ultimate",
+            price: 9.99,
+            space: 2000,
+            transfer: 20000,
+            pages: 500,
+            discountMonths: [6, 7] 
+        };
+
+        function basicReveal() {
+            document.getElementById("Basic-content").style.display = "Block";
+        }
+    </script>
+
+    <h1>Hosting Plans</h1>
+    <div class="Basic" onclick="basicReveal()">Basic</div>
+        <span>Basic</span>
+        <div class="Basic-content">
+            <p>Space: 100 <br><br>
+               Transfer: 100 <br><br>
+               Pages: 10 <br><br>
+               Discount Months: [6, 7] <br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="Professional">
+        <span>Professional</span>
+        <div class="Professional-content">
+            <p>Space: 500 <br><br>
+               Transfer: 5000 <br><br>
+               Pages: 50 <br><br>
+               Discount Months: [6, 7, 11] <br><br>
+            </p>
+        </div>
+    </div>
+    
+    <div class="Ultimate">
+        <span>Ultimate</span>
+        <div class="Ultimate-content">
+            <p>Space: 2000 <br><br>
+               Transfer: 20000 <br><br>
+               Pages: 500 <br><br>
+               Discount Months: [6, 7] <br><br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

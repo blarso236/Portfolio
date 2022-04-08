@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        
+            class Plan 
+            {
+                constructor(name,price,space,transfer,pages,discountmonths)
+                {
+                    this.name = name;
+                    this.price = price;
+                    this.space = space;
+                    this.transfer = transfer;
+                    this.pages = pages;
+                    this.discountMonths = discountMonths;
+                }
+
+
+                    calcAnnual(percentIfDisc)
+                {
+                        var bestPrice = this.price;
+                        console.log("Price" + bestPrice);
+                        var currDate = new Date();
+                        console.log("Current Date " +currDate);
+                        var thisMo = currDate.getMonth();
+                        console.log("This Month " +thisMo);
+                            for (var i = 0; i < this.discountMonths.length; i++);
+                            {
+                                console.log(this.discountMonths.length);
+
+                                if (this.discountMonths[i] === thisMo)
+                                 {
+                                bestPrice = this.price * percentIfDisc;
+                                console.log("Price after discount" +bestPrice);
+                                break;
+                                 }
+
+                            }
+                            return bestPrice * 12;
+                            console.log("Price with no discount" + bestPrice);
+                }
+            }
+    </script>
+</body>
+</html>

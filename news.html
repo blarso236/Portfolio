@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News</title>
+</head>
+<body>
+    
+    <h1 class="header">Current News</h1>
+    <ul>
+        <li><a href="#home" onclick="lobby()">Home</a></li>
+        <li><a class="active" href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul><br><br>
+    
+    <button class="accordion">Recent</button>
+    <div class="panel">
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+    <button class="accordion">Top Articles</button>
+    <div class="panel">
+        <p class="headline"><b>Man Jailed after climbing Egyptian pyramid for social media stunt</p>
+            <p style="font-size: 24px;"><img src="climb.jpg" class="BN"> Popular Youtube star Vitaly Zdoroverskiy said he was arrested <br> and spent five days in jail after climbing the Great Pyramid of Giza in Egypt. <br> Zdorovetskiy posted an Instagram photo of what appeared to be his sneaker-clad feet dangling over the pyramid. <br>
+                <button class="site" id="News" onclick="topNews()">Learn more</button></p>
+    </div>
+
+    <button class="accordion">Controversial</button>
+    <div>
+        <img src="" alt="" srcset="">
+        <p></p>
+    </div>
+
+    <script src="homepage.js"></script>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
