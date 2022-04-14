@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            width: 100%;
+            
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: gray;
+        }
+
+        .active {
+            background-color: green;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#home" onclick="redirectOne()">Semester 1</a></li>
+        <li><a class="active" href="#semtwo">Semester 2</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#disabled" class="disabled">disabled</a></li>
+    </ul><br><br><br><br>
+
+    <button class="button" id="D" onclick="redirectD()">Clock</button>
+    <button class="button" id="O" onclick="redirectO()">Quiz</button>
+    <button class="button" id="J" onclick="redirectJ()">National Holidays</button>
+    <button class="button" id="K" onclick="redirectK()">Transition Mail</button>
+    <button class="button" id="L" onclick="redirectL()">Audio</button>
+    <button class="button" id="N" onclick="redirectN()">Transition</button><br><br><br><br>
+    <p class="disclaimer">This is just an example.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
