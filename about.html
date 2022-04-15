@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            width: 100%;
+            
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: gray;
+        }
+
+        .active {
+            background-color: green;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .info {
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 5px;
+            border: 15px solid green;
+            width: 600px;
+            height: 940px;
+            font-size: 39px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#home" onclick="redirectOne()">Semester 1</a></li>
+        <li><a href="#semtwo" onclick="redirectTwo()">Semester 2</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#disabled" class="disabled">disabled</a></li>
+    </ul><br><br><br><br>
+
+    <div class="info">
+        Brett Larson is a junior programmer born on August 30th, 2005 in Phoenix Arizona. He first gained an interest in coding at the very young age of 7 years old, and started to pursue this career three years later at the age of 10, using a different method of coding to attempt to familiarize himself into the field of coding by using a game called Minecraft with less than desirable results. He didn't give up though despite feeling defeated. He looked into other methods that could possibly help him get the grip of coding until six years later he enrolled for a trade school for the purpose to learn how to use basic programming languages for the sole purpose to get a basic understanding of general scripting for later use in programming a game on his own.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
